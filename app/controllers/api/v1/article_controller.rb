@@ -14,9 +14,7 @@ class Api::V1::ArticleController < ApplicationController
     def create
         body = request.raw_post
         data_parsed = JSON.parse(body)
-        p data_parsed
         tag_ids = data_parsed["tag_ids"]
-        p tag_ids
         @article = Article.create(data_parsed)
         
         if !tag_ids.nil?
