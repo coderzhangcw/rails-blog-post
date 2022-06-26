@@ -2,7 +2,7 @@
 
 
 ### 功能实现：
-- 这是一个单纯的api server
+- restful api server
 - 提供了article简单的增删改查
 - 提供了tag简单的增删改查
 - article和tag是多对多的关系
